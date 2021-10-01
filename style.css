@@ -1,3 +1,35 @@
+/* Indhent fonte */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,300&display=swap");
+
+@font-face {
+  font-family: "badaboom_bbregular";
+  src: url("badabb__-webfont.woff2") format("woff2"),
+    url("badabb__-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* De generelle 'regler' for fonte og farver */
+:root {
+  --bg-color: #e30615;
+  --link-color: #5db136;
+  --link-hover-color: #5ac0cc;
+  --color-4: #e6007e;
+  --color-5: #ffed00;
+
+  --primary-font: "BadaBoom BB", sans-serif;
+  --secondary-font: "Lato", serif;
+  --main-text-color: #000;
+
+  --white-space: 1rem;
+}
+
 .navbar-light .navbar-toggler {
   border: none;
 }
@@ -9,5 +41,25 @@
 
 .navbar-brand img {
   position: absolute;
-  left: 40%;
+  left: 35%;
+}
+
+h1 {
+  font-family: var(--primary-font);
+  letter-spacing: 0.7px;
+  font-size: 5rem;
+  margin-top: calc(35vh);
+  transform: translateY(-50%);
+}
+
+@media (min-width: 800px) {
+  .navbar-brand img {
+    left: 40%;
+  }
+}
+
+@media (min-width: 900px) {
+  .navbar-brand img {
+    left: 50%;
+  }
 }
