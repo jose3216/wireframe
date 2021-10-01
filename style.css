@@ -52,9 +52,39 @@ h1 {
   transform: translateY(-50%);
 }
 
+h2 {
+  font-family: var(--primary-font);
+  letter-spacing: 0.7px;
+  font-size: 2rem;
+  /* text-align: center; */
+}
+h3 {
+  font-family: var(--secondary-font);
+}
+
+.foodtag {
+  position: absolute;
+  transform: translateY(50vh) translateX(-89vw) rotate(-25deg);
+}
+
 @media (min-width: 800px) {
   .navbar-brand img {
     left: 40%;
+  }
+
+  .foodtag {
+    transform: translateY(45vh) translateX(-45vw) rotate(-25deg);
+  }
+
+  .foodtag_2 {
+    transform: translateY(37vh) translateX(-47vw) rotate(-25deg);
+    width: 50%;
+    height: auto;
+  }
+
+  .pasta3 {
+    height: 45%;
+    object-fit: cover;
   }
 }
 
