@@ -20,7 +20,7 @@
   --bg-color: #e30615;
   --link-color: #5db136;
   --link-hover-color: #5ac0cc;
-  --color-4: #e6007e;
+  --color-4: #c0006a;
   --color-5: #ffed00;
 
   --primary-font: "BadaBoom BB", sans-serif;
@@ -62,9 +62,13 @@ h3 {
   font-family: var(--secondary-font);
 }
 
+.aktivitet {
+  background-color: #c0006a;
+}
+
 .foodtag {
   position: absolute;
-  transform: translateY(50vh) translateX(-89vw) rotate(-25deg);
+  transform: translateY(50vh) translateX(8vw) rotate(-25deg);
 }
 
 @media (min-width: 800px) {
@@ -73,7 +77,7 @@ h3 {
   }
 
   .foodtag {
-    transform: translateY(45vh) translateX(-45vw) rotate(-25deg);
+    transform: translateY(35vh) translateX(10vw) rotate(-25deg);
   }
 
   .foodtag_2 {
@@ -91,5 +95,9 @@ h3 {
 @media (min-width: 900px) {
   .navbar-brand img {
     left: 50%;
+  }
+
+  .foodtag_2 {
+    transform: translateY(50vh) translateX(8vw) rotate(-25deg);
   }
 }
